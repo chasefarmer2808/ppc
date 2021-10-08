@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { hitCountApi } from './api';
+import './HitComponent.css';
 
 export const HitComponent = () => {
     const [hits, setHits] = useState(0);
@@ -10,9 +11,9 @@ export const HitComponent = () => {
     }
 
     return (
-        <section>
+        <section className="hit-component-root">
             <h2>Hit Count</h2>
-            <strong>{hits}</strong>
+            {hits > 0 ? <p><strong>{hits}</strong></p> : <p>Click the button to get the latest hits</p>}
             <button onClick={handleHit}>Hit</button>
         </section>
     )

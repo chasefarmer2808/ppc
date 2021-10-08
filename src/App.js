@@ -7,7 +7,9 @@ function App() {
   return (
     <main>
       <h1>Project Purple Cow</h1>
-      <HitComponent />
+      <section>
+        <HitComponent />
+      </section>
     </main>
   );
 }
