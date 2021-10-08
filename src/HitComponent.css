@@ -3,3 +3,34 @@
     flex-direction: column;
     align-items: center;
 }
+
+button {
+    background-color: #ee5340;
+    padding: 8px;
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: all .1s ease;
+}
+
+button:active {
+    box-shadow: inset 1px 1px 10px #333;
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in-down {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-name: fadeInDown;
+}
