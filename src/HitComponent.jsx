@@ -15,8 +15,8 @@ export const HitComponent = () => {
             <h2>Hit Count</h2>
             {hits > 0 
                 ? <p className="fade-in-down" aria-label={hits}><strong>{hits}</strong></p> 
-                : <p>Click the button to get the latest hits</p>}
-            <button onClick={handleHit} aria-label="Hit the counter API.">Hit</button>
+                : <p>Click the button, or press enter, to get the latest hits</p>}
+            <button onClick={handleHit} autoFocus={true} aria-label="Hit the counter API.">Hit</button>
         </section>
     )
 }
