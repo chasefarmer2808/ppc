@@ -34,3 +34,11 @@ button:active {
     animation-fill-mode: both;
     animation-name: fadeInDown;
 }
+
+.trick-1 {
+    transform: translateX(100px);
+}
+
+.trick-2 {
+    transform: translateX(-200px);
+}
