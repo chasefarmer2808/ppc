@@ -1,8 +1,6 @@
 import './App.css';
 import { HitComponent } from './HitComponent';
 
-// TODO: Favicon
-
 function App() {
   return (
     <main>
