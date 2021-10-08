@@ -13,8 +13,8 @@ export const HitComponent = () => {
     return (
         <section className="hit-component-root">
             <h2>Hit Count</h2>
-            {hits > 0 ? <p><strong>{hits}</strong></p> : <p>Click the button to get the latest hits</p>}
-            <button onClick={handleHit}>Hit</button>
+            {hits > 0 ? <p aria-label={hits}><strong>{hits}</strong></p> : <p>Click the button to get the latest hits</p>}
+            <button onClick={handleHit} aria-label="Hit the counter API.">Hit</button>
         </section>
     )
 }
